@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import { Frame } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, followers, views, likes }) => {
     return (
-        <div className="profile">
+        <Frame>
   <div className="description">
     <img
       src={avatar}
@@ -16,7 +17,7 @@ export const Profile = ({ username, tag, location, avatar, followers, views, lik
 
   <ul className="stats">
     <li>
-      <span className="label"><Followers></Followers></span>
+      <span className="label">Followers</span>
       <span className="quantity">{followers}</span>
     </li>
     <li>
@@ -28,12 +29,12 @@ export const Profile = ({ username, tag, location, avatar, followers, views, lik
       <span className="quantity">{likes}</span>
     </li>
   </ul>
-</div>
+</Frame>
     )
 }
 
 
-Profile.PropTypes = {
+Profile.propTypes = {
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,

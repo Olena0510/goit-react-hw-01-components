@@ -4,7 +4,7 @@ import { user, data, friends, transactions } from '../data/dataAll';
 export const App = () => {
   return (
     <>
-    <Profile
+      <Profile
       username={user.username}
       tag={user.tag}
       location={user.location}
