@@ -6,7 +6,7 @@ export const Statistics = ({ title, stats }) => {
         <StatisticsSection> 
             {title && <Title> { title } </Title>}
 
-            <List className="stat-list">
+            <List>
                 {stats.map(({id, label, percentage}) => (
                     <Item key={id} className="item">
       <Label>{label}</Label>

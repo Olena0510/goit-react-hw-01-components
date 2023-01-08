@@ -9,10 +9,8 @@ export const FriendList = ({ friends }) => {
                 <ItemFriend key = {friend.id}>
                     <FriendItem friend={friend} />
                 </ItemFriend>
-            ))
-                
+            ))       
     }
-
 </ListFriend>
     )
 }
