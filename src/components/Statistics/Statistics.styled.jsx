@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const StatisticsSection = styled.section`
     text-align: center;
 margin: auto;
-border-radius: 10px;
+border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 256, 0.5);
   max-width: 300px;
   margin-top: 30px;

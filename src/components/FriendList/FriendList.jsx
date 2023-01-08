@@ -1,18 +1,19 @@
 import PropTypes from 'prop-types';
 import { FriendItem } from 'components/FriendListItem/FriendListItem';
+import { ListFriend, ItemFriend } from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
     return (
-        <ul>
+        <ListFriend>
             {friends.map(friend => (
-                <li key = {friend.id}>
+                <ItemFriend key = {friend.id}>
                     <FriendItem friend={friend} />
-                </li>
+                </ItemFriend>
             ))
                 
     }
 
-</ul>
+</ListFriend>
     )
 }
 
