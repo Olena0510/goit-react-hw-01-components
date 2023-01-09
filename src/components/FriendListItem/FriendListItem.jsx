@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 import { Status, AvatarFriend, NameFriend } from './FriendListItem.styled';
 
 export const FriendItem = ({ friend: { avatar, name, isOnline } }) => {
-    return ( 
+    return (
         <>
-            <Status></Status>
-  <AvatarFriend  src={avatar} alt={name} width="48" />
+            <Status isOnline={isOnline}></Status>
+            <AvatarFriend src={avatar} alt={name} width="48" />
             <NameFriend>{name}</NameFriend>
-</>
-    )
+        </>
+    );
 }
 
 
@@ -18,5 +18,5 @@ FriendItem.propTypes = {
         name: PropTypes.string.isRequired,
         isOnline: PropTypes.bool.isRequired,
         id: PropTypes.string.isRequired,
-    })
+    }).isRequired
 }
