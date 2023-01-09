@@ -45,7 +45,7 @@ export const StatsItem = styled.li`
     flex-direction: column;
      gap: 5px;
      justify-content: center;
-      background: #e7e7f5;
+      background-color: #e7e7f5;
       border: 1px #c5c5f5 solid;
      width: 100%;
      height: 100px;
