@@ -17,8 +17,9 @@ export const TransactionItem = ({ item: { type, amount, currency } }) => {
 
 TransactionItem.propTypes = {
     item: PropTypes.exact({
+        id: PropTypes.string.isRequired,
         type: PropTypes.string.isRequired,
-        amount: PropTypes.number.isRequired,
-        currenty: PropTypes.string.isRequired,
+        amount: PropTypes.string.isRequired,
+        currency: PropTypes.string.isRequired,
     })
 }

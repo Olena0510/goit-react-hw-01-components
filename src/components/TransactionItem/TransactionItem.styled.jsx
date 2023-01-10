@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const TableRow = styled.tr`
-:nth-child(2n){
+:nth-of-type(2n){
     background-color: #e7e7f5;;
 }
 `;
